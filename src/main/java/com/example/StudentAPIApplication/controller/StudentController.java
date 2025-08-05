@@ -26,4 +26,9 @@ public class StudentController {
         return ResponseEntity.ok(studentService.getAllStudent());
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<String> search(@RequestParam String name, @RequestParam int age) {
+        return ResponseEntity.ok("Searching for: " + name + ", age: " + age);
+    }
+
 }
