@@ -1,13 +1,25 @@
 package com.example.exceptionhandlingpractice.model;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+
 public class Student {
+    @Min(1)
     private int studentId;
+
+    @NotBlank
     private String studentName;
+
+    @Email @NotBlank
+    private String email;
+
     public Student(){
     };
-    public Student(int studentId, String studentName){
+    public Student(int studentId, String studentName, String email){
         this.studentId = studentId;
         this.studentName = studentName;
+        this.email = email;
     }
 
     public int getStudentId() {
@@ -22,5 +34,13 @@ public class Student {
     }
     public void setStudentName(String studentName) {
         this.studentName = studentName;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
     }
 }

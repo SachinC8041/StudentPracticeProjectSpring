@@ -23,4 +23,16 @@ public class StudentService {
     public List<Student> getAllStudent(){
         return studentRepo.getAllStudentList();
     }
+
+    public void deleteStudent(int studentId) {
+        if (studentId < 1) {
+            throw new IllegalArgumentException("Invalid student ID");
+        }
+        studentRepo.deleteStudent(studentId);
+    }
+
+    public int purgeAll() {
+        return studentRepo.purgeAll();
+    }
+
 }
