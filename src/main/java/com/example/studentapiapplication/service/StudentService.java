@@ -1,7 +1,7 @@
-package com.example.exceptionhandlingpractice.service;
+package com.example.studentapiapplication.service;
 
-import com.example.exceptionhandlingpractice.model.Student;
-import com.example.exceptionhandlingpractice.repository.StudentRepository;
+import com.example.studentapiapplication.model.Student;
+import com.example.studentapiapplication.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

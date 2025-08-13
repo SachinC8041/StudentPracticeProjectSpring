@@ -1,7 +1,7 @@
-package com.example.exceptionhandlingpractice.controller;
+package com.example.studentapiapplication.controller;
 
-import com.example.exceptionhandlingpractice.model.Student;
-import com.example.exceptionhandlingpractice.service.StudentService;
+import com.example.studentapiapplication.model.Student;
+import com.example.studentapiapplication.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

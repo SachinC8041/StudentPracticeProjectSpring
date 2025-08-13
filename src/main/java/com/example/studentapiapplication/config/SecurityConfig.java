@@ -1,4 +1,4 @@
-package com.example.exceptionhandlingpractice.config;
+package com.example.studentapiapplication.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,7 +21,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(req -> req
                         .requestMatchers("/public/**").permitAll()         // Public area
                         .requestMatchers("/admin/**").hasRole("ADMIN")     // Teacher/Admin
-                        .requestMatchers("/user/**", "/ex/student/**").hasRole("USER") // Student/User
+                        .requestMatchers("/user/**").hasRole("USER") // Student/User
                         .anyRequest().authenticated()
                 )
                 .httpBasic(basic -> {}) // Enable Basic Auth (Postman)

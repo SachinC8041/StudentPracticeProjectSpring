@@ -1,4 +1,4 @@
-package com.example.exceptionhandlingpractice.controller;
+package com.example.studentapiapplication.controller;
 
 import org.springframework.web.bind.annotation.*;
 

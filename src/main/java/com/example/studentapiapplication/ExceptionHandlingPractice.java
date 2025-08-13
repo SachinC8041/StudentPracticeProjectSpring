@@ -1,6 +1,5 @@
-package com.example.exceptionhandlingpractice;
+package com.example.studentapiapplication;
 
-import com.example.StudentAPIApplication.StudentApiApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

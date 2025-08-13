@@ -1,6 +1,6 @@
-package com.example.exceptionhandlingpractice.repository;
+package com.example.studentapiapplication.repository;
 
-import com.example.exceptionhandlingpractice.model.Student;
+import com.example.studentapiapplication.model.Student;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
